@@ -1,0 +1,105 @@
+/*
+    File: style.css
+//  Assignment: Multiplication table using javascript
+//  File Description: this is a styling file for mulltiplication table and it is connected to html file.
+//  Arth Patel, UMass Lowell Computer Science, Arth_patel@student.uml.edu
+//  Copyright (c) 2022 by Arth Patel. All rights reserved. May be
+//  freely copied or excerpted for educational purposes with credit to the
+//  author.
+//  Updated by Arth Patel on June 23, 2022 at 3:00 PM
+*/
+
+table, tr, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+table{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+tr, th,td{
+    width: 60px;
+    height: 30px;
+    font-size: 20px;
+    text-align: center;
+}
+
+td:first-child{
+    background-color: skyblue;
+}
+th{
+    background-color: skyblue;
+}
+form{
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+}
+
+h3{
+    text-align: center;
+    font-size: 50px;
+    margin-top: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 0px;
+    background-color: aquamarine;
+}
+
+body{
+    background-color: antiquewhite;
+
+}
+
+.digit1, .digit2, .digit3, .digit4, #create_btn{
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+ #mybtn, #save_table{
+    background-color: aquamarine;
+    align-items: center;
+    height: 50px;
+    width: 100px;
+}
+.deletebutton{
+    background-color: aquamarine;
+    align-items: center;
+    height: auto;
+    width: auto;
+}
+#digit1, #digit2, #digit3, #digit4{
+    width: 50px;
+
+}
+
+p{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.tabContainer {
+    width: 80%;
+    margin: auto;
+  }
+.tabContainer .overflow {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+#tableContainer{
+    padding: 0 200px;
+    width: 500px;
+    height:300px;
+    overflow-x: auto;
+    overflow-y: auto;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.error{
+    color: red;
+}

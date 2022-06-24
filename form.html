@@ -1,0 +1,72 @@
+<!--
+    File: form.html
+//  Assignment: Multiplication table using javascript
+//  Arth Patel, UMass Lowell Computer Science, Arth_patel@student.uml.edu
+//  Copyright (c) 2022 by Arth Patel. All rights reserved. May be
+//  freely copied or excerpted for educational purposes with credit to the
+//  author.
+//  Updated by Arth Patel on June 23, 2022 at 3:00 PM
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Multiplication Table Generator</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/jqueryUiTheme.css">
+</head>
+<body>
+    <h3> Multiplication Table Generator</h3>
+    <p>This webpage is going to generator a Multiplication table, The user needs to enter the starting and ending number of the X-axis & Y-axis.</p>
+    <!-- Form to ask user to enter the data and get the valid reply-->
+    <form id="Form" >
+        <div class="digit1">
+            <label>Enter your starting number for X-axis:</label>
+            <input type="number" id="digit1" name="digit1">
+            <input type="range" id="digit1_slider" min="-50" max="50">
+        </div>
+        
+        <div class="digit2">
+            <label>Enter your ending number for X-axis:</label>
+            <input type="number" id="digit2" name="digit2">
+            <input type="range" id="digit2_slider" min="-50" max="50">
+        </div>
+
+        <div class="digit3">
+            <label>Enter your starting number for Y-axis:</label>
+            <input type="number" id="digit3" name="digit3">
+            <input type="range" id="digit3_slider" min="-50" max="50">
+        </div>
+
+        <div class="digit4">
+            <label>Enter your ending numnber for Y-axis:</label>
+            <input type="number" id="digit4" name="digit4">
+            <input type="range" id="digit4_slider" min="-50" max="50">
+        </div>
+        
+        <div id="create_btn">
+        <input id="mybtn" type="submit" value="Create Table" onclick="makeTable()" ></input>
+        <input id="save_table" type="button" value="Save Table"  ></input>
+        </div>
+        <div if="errorLog"></div>
+    </form>
+    <!-- This contains the table-->
+    <div id="tableContainer"></div>
+
+    <!-- This conatins all the tabs that will be created-->
+    <div id="tabContainer">
+        <div class="container">
+            <button type="button" class="deletebutton" name="deletebutton">Delete Selected tab</button>
+        </div>
+    <ul id="tabList"></ul>
+    <div id="tabData"></div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js" ></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+    <script src="/javascript/form.js"></script>
+</body>
+
+</html>
+
